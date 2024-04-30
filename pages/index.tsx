@@ -8,6 +8,7 @@ import { useState, useContext } from "react";
 import { SmartWalletContext } from "../context/smart-wallet";
 import { createSmartAccountClient } from "@biconomy/account";
 import { Address, parseEther } from "viem";
+import { gql, request } from "graphql-request";
 
 const firebaseAuthUrl =
 	"http://localhost:5001/colledge-tutorial/us-central1/signInWithEthereum";
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
 				biconomyPaymasterApiKey: process.env.NEXT_PUBLIC_BICONOMY_API_KEY,
 			});
 
-			const toAddress = account.address as Address;  // Replace with the recipient's address
+			const toAddress = account.address as Address; // Replace with the recipient's address
 			const transactionData = "0x"; // Replace with the actual transaction data
 
 			// Build the transaction
@@ -64,20 +65,49 @@ const Home: NextPage = () => {
 				value: parseEther("0.01"),
 			};
 
-			const txs = [ tx, tx]
+			const txs = [tx, tx];
 
 			const userOpResponse = await smartAccount.sendTransaction(txs);
 			const { transactionHash } = await userOpResponse.waitForTxHash();
 			console.log("Transaction Hash", transactionHash);
-			
-			const userOpReceipt  = await userOpResponse.wait();
-			if(userOpReceipt.success == 'true') { 
-			  console.log("UserOp receipt", userOpReceipt)
-			  console.log("Transaction receipt", userOpReceipt.receipt)
-			}			
+
+			const userOpReceipt = await userOpResponse.wait();
+			if (userOpReceipt.success == "true") {
+				console.log("UserOp receipt", userOpReceipt);
+				console.log("Transaction receipt", userOpReceipt.receipt);
+			}
 		} catch (error) {
 			console.error(error);
 		}
+	};
+
+	const fetchDataFromUniswap = async () => {
+		console.log("Fetching data from Uniswap");
+
+		const uri = `https://gateway-arbitrum.network.thegraph.com/api/${process.env.NEXT_PUBLIC_THE_GRAPH_API_KEY}/subgraphs/id/5zvR82QoaXYFyDEKLZ9t6v9adgnptxYpKpSbxtgVENFV`;
+
+		const query = gql`
+			{
+				swaps {
+					amountUSD
+					id
+					sender
+					recipient
+					token0 {
+						symbol
+						name
+					}
+					timestamp
+					token1 {
+						symbol
+						name
+					}
+				}
+			}
+		`;
+
+		const response = await request(uri, query);
+		console.log("🚀 ~ fetchDataFromUniswap ~ response:", response)
 	};
 
 	return (
@@ -114,6 +144,13 @@ const Home: NextPage = () => {
 							className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
 						>
 							Send ETH withouth gas fees
+						</button>
+						<br />
+						<button
+							onClick={fetchDataFromUniswap}
+							className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+						>
+							Fetch Data from Uniswap
 						</button>
 					</div>
 				)}
