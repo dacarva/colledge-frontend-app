@@ -1,0 +1,1363 @@
+[debug] [2024-04-30T19:10:38.771Z] ----------------------------------------------------------------------
+[debug] [2024-04-30T19:10:38.773Z] Command:       /Users/davidcarvajal/.nvm/versions/node/v20.11.0/bin/node /Users/davidcarvajal/.nvm/versions/node/v20.11.0/bin/firebase emulators:start
+[debug] [2024-04-30T19:10:38.773Z] CLI Version:   13.3.0
+[debug] [2024-04-30T19:10:38.773Z] Platform:      darwin
+[debug] [2024-04-30T19:10:38.773Z] Node Version:  v20.11.0
+[debug] [2024-04-30T19:10:38.774Z] Time:          Tue Apr 30 2024 14:10:38 GMT-0500 (Colombia Standard Time)
+[debug] [2024-04-30T19:10:38.774Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-30T19:10:38.814Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-30T19:10:38.815Z] > authorizing via signed-in user (david@tropykus.com)
+[debug] [2024-04-30T19:10:39.228Z] java version "21.0.2" 2024-01-16 LTS
+
+[debug] [2024-04-30T19:10:39.229Z] Java(TM) SE Runtime Environment (build 21.0.2+13-LTS-58)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.2+13-LTS-58, mixed mode, sharing)
+
+[debug] [2024-04-30T19:10:39.232Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore"}}
+[debug] [2024-04-30T19:10:39.546Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-30T19:10:39.546Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-30T19:10:39.546Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-30T19:10:39.546Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-30T19:10:39.547Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-30T19:10:39.550Z] [hub] writing locator at /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/hub-colledge-tutorial.json
+[debug] [2024-04-30T19:10:39.636Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-30T19:10:39.637Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-30T19:10:39.637Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-04-30T19:10:39.639Z] defaultcredentials: writing to file /Users/davidcarvajal/.config/firebase/david_tropykus_com_application_default_credentials.json
+[debug] [2024-04-30T19:10:39.641Z] Setting GAC to /Users/davidcarvajal/.config/firebase/david_tropykus_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/davidcarvajal/.config/firebase/david_tropykus_com_application_default_credentials.json"}}
+[debug] [2024-04-30T19:10:39.642Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/colledge-tutorial/adminSdkConfig [none]
+[debug] [2024-04-30T19:10:40.215Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/colledge-tutorial/adminSdkConfig 200
+[debug] [2024-04-30T19:10:40.215Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/colledge-tutorial/adminSdkConfig {"projectId":"colledge-tutorial","storageBucket":"colledge-tutorial.appspot.com"}
+[debug] [2024-04-30T19:10:40.227Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-30T19:10:40.227Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-04-30T19:10:40.227Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/davidcarvajal/.cache/firebase/emulators/cloud-firestore-emulator-v1.18.2.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","colledge-tutorial","--rules","/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/davidcarvajal/.cache/firebase/emulators/cloud-firestore-emulator-v1.18.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"colledge-tutorial\",\"--rules\",\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-04-30T19:10:41.015Z] Apr 30, 2024 2:10:40 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 30, 2024 2:10:40 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2024-04-30T19:10:41.032Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-04-30T19:10:41.033Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-04-30T19:10:44.544Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-30T19:10:44.545Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-04-30T19:10:44.545Z] Starting Emulator UI with command {"binary":"node","args":["/Users/davidcarvajal/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/davidcarvajal/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-04-30T19:10:44.605Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-04-30T19:10:44.606Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions\" for Cloud Functions..."}}
+[debug] [2024-04-30T19:10:44.808Z] Validating nodejs source
+[debug] [2024-04-30T19:10:45.522Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:
+
+ functions/lib/index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:\n\n functions/lib/index.js does not exist, can't deploy Cloud Functions"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-04-30T19:10:52.446Z] Apr 30, 2024 2:10:52 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 30, 2024 2:10:52 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2024-04-30T19:12:02.765Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:12:02.862Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:12:03.869Z] Validating nodejs source
+[debug] [2024-04-30T19:12:04.632Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:
+
+ functions/lib/index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:\n\n functions/lib/index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2024-04-30T19:12:19.042Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:12:20.046Z] Validating nodejs source
+[debug] [2024-04-30T19:12:21.291Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:
+
+ functions/lib/index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:\n\n functions/lib/index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2024-04-30T19:12:36.319Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:12:37.324Z] Validating nodejs source
+[debug] [2024-04-30T19:12:38.191Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:
+
+ functions/lib/index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:\n\n functions/lib/index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2024-04-30T19:12:55.967Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:12:56.973Z] Validating nodejs source
+[debug] [2024-04-30T19:12:57.836Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:
+
+ functions/lib/index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading functions/package.json:\n\n functions/lib/index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2024-04-30T19:13:18.809Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:13:18.999Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:13:19.000Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:13:20.004Z] Validating nodejs source
+[debug] [2024-04-30T19:13:20.736Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:13:20.736Z] Building nodejs source
+[debug] [2024-04-30T19:13:20.739Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:13:20.756Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:13:20.824Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8093
+
+[debug] [2024-04-30T19:13:21.272Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/colledge-tutorial/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/colledge-tutorial/us-central1/helloWorld)."}}
+[debug] [2024-04-30T19:13:41.884Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:13:41.886Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:13:42.890Z] Validating nodejs source
+[debug] [2024-04-30T19:13:43.578Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:13:43.579Z] Building nodejs source
+[debug] [2024-04-30T19:13:43.579Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:13:43.580Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:13:43.581Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8055
+
+[debug] [2024-04-30T19:13:43.810Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:14:15.495Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:15.499Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:16.502Z] Validating nodejs source
+[debug] [2024-04-30T19:14:17.182Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:14:17.182Z] Building nodejs source
+[debug] [2024-04-30T19:14:17.182Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:14:17.184Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:14:17.185Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8315
+
+[debug] [2024-04-30T19:14:17.494Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:14:31.996Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:32.000Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:33.002Z] Validating nodejs source
+[debug] [2024-04-30T19:14:33.791Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:14:33.791Z] Building nodejs source
+[debug] [2024-04-30T19:14:33.791Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:14:33.792Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:14:33.794Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8765
+
+[debug] [2024-04-30T19:14:34.028Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:14:44.697Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:45.700Z] Validating nodejs source
+[debug] [2024-04-30T19:14:46.388Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:14:46.389Z] Building nodejs source
+[debug] [2024-04-30T19:14:46.389Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:14:46.390Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:14:46.391Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8060
+
+[debug] [2024-04-30T19:14:46.627Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:14:52.127Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:52.128Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:53.136Z] Validating nodejs source
+[debug] [2024-04-30T19:14:53.875Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:14:53.875Z] Building nodejs source
+[debug] [2024-04-30T19:14:53.875Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:14:53.877Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:14:53.879Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8828
+
+[debug] [2024-04-30T19:14:54.133Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-04-30T19:14:58.115Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:14:58.201Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers"}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:14:59.204Z] Validating nodejs source
+[debug] [2024-04-30T19:14:59.851Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:14:59.852Z] Building nodejs source
+[debug] [2024-04-30T19:14:59.852Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:14:59.853Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:14:59.855Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8859
+
+[debug] [2024-04-30T19:15:00.065Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-04-30T19:15:03.386Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:15:03.389Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:15:04.399Z] Validating nodejs source
+[debug] [2024-04-30T19:15:05.134Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:15:05.135Z] Building nodejs source
+[debug] [2024-04-30T19:15:05.135Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:15:05.136Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:15:05.137Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] Serving at port 8552
+
+[debug] [2024-04-30T19:15:05.317Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:15:47.165Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/tsconfig.dev.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/tsconfig.dev.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:15:48.173Z] Validating nodejs source
+[debug] [2024-04-30T19:15:49.026Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:15:49.026Z] Building nodejs source
+[debug] [2024-04-30T19:15:49.026Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:15:49.028Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:15:49.030Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8162
+
+[debug] [2024-04-30T19:15:49.272Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:15:54.419Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:15:54.420Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:15:55.422Z] Validating nodejs source
+[debug] [2024-04-30T19:15:56.252Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:15:56.253Z] Building nodejs source
+[debug] [2024-04-30T19:15:56.253Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:15:56.255Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:15:56.257Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8755
+
+[debug] [2024-04-30T19:15:56.526Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-04-30T19:15:58.069Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/tsconfig.dev.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/tsconfig.dev.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:15:59.071Z] Validating nodejs source
+[debug] [2024-04-30T19:15:59.717Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:15:59.717Z] Building nodejs source
+[debug] [2024-04-30T19:15:59.717Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:15:59.719Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:15:59.720Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8092
+
+[debug] [2024-04-30T19:16:00.035Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:16:48.391Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:16:49.410Z] Validating nodejs source
+[debug] [2024-04-30T19:16:50.344Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:16:50.346Z] Building nodejs source
+[debug] [2024-04-30T19:16:50.346Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:16:50.349Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:16:50.350Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8561
+
+[debug] [2024-04-30T19:16:50.835Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:17:48.035Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/helloWorld-2024-04-30T19:17:48.031Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:17:48.037Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/helloWorld-2024-04-30T19:17:48.031Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:17:48.039Z] Accepted request GET /colledge-tutorial/us-central1/helloWorld --> us-central1-helloWorld
+[debug] [2024-04-30T19:17:48.041Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:17:48.044Z] [functions] Got req.url=/colledge-tutorial/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2024-04-30T19:17:48.056Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2024-04-30T19:17:48.057Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2024-04-30T19:17:48.990Z] [runtime-status] [80719] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:17:48.990Z] [runtime-status] [80719] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:17:48.991Z] [runtime-status] [80719] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-04-30T19:17:48.991Z] [runtime-status] [80719] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:17:49.137Z] [runtime-status] [80719] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-04-30T19:17:49.137Z] [runtime-status] [80719] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-04-30T19:17:49.137Z] [runtime-status] [80719] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:17:49.137Z] [runtime-status] [80719] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:17:49.138Z] [runtime-status] [80719] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:17:49.139Z] [runtime-status] [80719] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-04-30T19:17:49.146Z] [runtime-status] [80719] Functions runtime initialized. {"cwd":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions","node_version":"20.11.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Functions runtime initialized. {\"cwd\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions\",\"node_version\":\"20.11.0\"}"}}
+[debug] [2024-04-30T19:17:49.146Z] [runtime-status] [80719] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_a8a9b60baa6a5a10.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [80719] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_a8a9b60baa6a5a10.sock"}}
+[debug] [2024-04-30T19:17:49.179Z] [worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: IDLE"}}
+[debug] [2024-04-30T19:17:49.180Z] [worker-pool] submitRequest(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-helloWorld)"}}
+[info] i  functions: Beginning execution of "us-central1-helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"us-central1-helloWorld\""}}
+[debug] [2024-04-30T19:17:49.180Z] [worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: BUSY"}}
+[info] >  {"structuredData":true,"severity":"INFO","message":"Hello logs!"} {"user":{"structuredData":true,"severity":"INFO","message":"Hello logs!"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"structuredData\":true,\"severity\":\"INFO\",\"message\":\"Hello logs!\"}"}}
+[debug] [2024-04-30T19:17:49.184Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-helloWorld" in 4.205875ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"us-central1-helloWorld\" in 4.205875ms"}}
+[debug] [2024-04-30T19:17:49.184Z] [worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: IDLE"}}
+[debug] [2024-04-30T19:17:49.184Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:17:49.184Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:17:49.185Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:18:36.029Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:18:36.162Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/package-lock.json changed, reloading triggers"}}
+[debug] [2024-04-30T19:18:37.169Z] Validating nodejs source
+[debug] [2024-04-30T19:18:38.087Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:18:38.089Z] Building nodejs source
+[debug] [2024-04-30T19:18:38.089Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:18:38.093Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:18:38.096Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8035
+
+[debug] [2024-04-30T19:18:38.570Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:18:43.610Z] [worker-pool] Shutting down IDLE worker (us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloWorld)"}}
+[debug] [2024-04-30T19:18:43.611Z] [worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: FINISHING"}}
+[debug] [2024-04-30T19:18:43.620Z] [worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: exited"}}
+[debug] [2024-04-30T19:18:43.620Z] [worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[worker-us-central1-helloWorld-d0586e6c-302e-47eb-b382-8fcd6ea54f16]: FINISHED"}}
+[debug] [2024-04-30T19:18:45.916Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:18:45.919Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:18:46.925Z] Validating nodejs source
+[debug] [2024-04-30T19:18:47.883Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:18:47.884Z] Building nodejs source
+[debug] [2024-04-30T19:18:47.885Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:18:47.888Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:18:47.890Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8042
+
+[debug] [2024-04-30T19:18:48.213Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:21:44.853Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:21:45.888Z] Validating nodejs source
+[debug] [2024-04-30T19:21:47.229Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:21:47.232Z] Building nodejs source
+[debug] [2024-04-30T19:21:47.233Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:21:47.241Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:21:47.246Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8870
+
+[debug] [2024-04-30T19:21:47.602Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-04-30T19:21:51.444Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:21:51.813Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:21:51.815Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:21:52.195Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:21:52.198Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld."}}
+[debug] [2024-04-30T19:21:53.201Z] Validating nodejs source
+[debug] [2024-04-30T19:21:53.977Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:21:53.977Z] Building nodejs source
+[debug] [2024-04-30T19:21:53.977Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:21:53.978Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:21:53.978Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8027
+
+[debug] [2024-04-30T19:21:54.258Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"signInWithEthereum":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"signInWithEthereum"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, signInWithEthereum. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, signInWithEthereum."}}
+[info] ✔  functions[us-central1-signInWithEthereum]: http function initialized (http://127.0.0.1:5001/colledge-tutorial/us-central1/signInWithEthereum). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/colledge-tutorial/us-central1/signInWithEthereum)."}}
+[debug] [2024-04-30T19:24:36.318Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:24:36.316Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:24:36.321Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:24:36.316Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:24:36.321Z] Accepted request OPTIONS /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:24:36.327Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:24:36.328Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:24:36.329Z] [worker-pool] Cleaned up workers for us-central1-helloWorld: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-helloWorld: 1 --> 0"}}
+[debug] [2024-04-30T19:24:36.347Z] [worker-pool] addWorker(us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-signInWithEthereum)"}}
+[debug] [2024-04-30T19:24:36.352Z] [worker-pool] Adding worker with key us-central1-signInWithEthereum, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-signInWithEthereum, total=1"}}
+[debug] [2024-04-30T19:24:37.151Z] [runtime-status] [86715] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:24:37.151Z] [runtime-status] [86715] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:24:37.152Z] [runtime-status] [86715] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-04-30T19:24:37.152Z] [runtime-status] [86715] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:24:37.328Z] [runtime-status] [86715] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-04-30T19:24:37.328Z] [runtime-status] [86715] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-04-30T19:24:37.328Z] [runtime-status] [86715] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:24:37.328Z] [runtime-status] [86715] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:24:37.330Z] [runtime-status] [86715] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:24:37.331Z] [runtime-status] [86715] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-04-30T19:24:37.434Z] [runtime-status] [86715] Functions runtime initialized. {"cwd":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions","node_version":"20.11.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Functions runtime initialized. {\"cwd\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions\",\"node_version\":\"20.11.0\"}"}}
+[debug] [2024-04-30T19:24:37.434Z] [runtime-status] [86715] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_829853129f5d6c0a.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [86715] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_829853129f5d6c0a.sock"}}
+[debug] [2024-04-30T19:24:37.479Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: IDLE"}}
+[debug] [2024-04-30T19:24:37.480Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:24:37.480Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: BUSY"}}
+[debug] [2024-04-30T19:24:37.484Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 4.739958ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 4.739958ms"}}
+[debug] [2024-04-30T19:24:37.485Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: IDLE"}}
+[debug] [2024-04-30T19:24:37.486Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:24:37.486Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:24:37.486Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:24:37.488Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:24:37.488Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:24:37.488Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:24:37.488Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:24:37.488Z] Accepted request POST /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:24:37.488Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:24:37.489Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:24:37.489Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:24:37.489Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: BUSY"}}
+[debug] [2024-04-30T19:24:37.527Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 38.362ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 38.362ms"}}
+[debug] [2024-04-30T19:24:37.528Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: IDLE"}}
+[debug] [2024-04-30T19:24:37.529Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:24:37.529Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:24:37.529Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:26:08.798Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:26:09.807Z] Validating nodejs source
+[debug] [2024-04-30T19:26:10.995Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:26:10.996Z] Building nodejs source
+[debug] [2024-04-30T19:26:10.997Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:26:11.002Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:26:11.003Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:26:11.004Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:26:11.008Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8282
+
+[debug] [2024-04-30T19:26:11.927Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"signInWithEthereum":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"signInWithEthereum"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-04-30T19:26:12.003Z] Validating nodejs source
+[debug] [2024-04-30T19:26:12.790Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:26:12.790Z] Building nodejs source
+[debug] [2024-04-30T19:26:12.790Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:26:12.791Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:26:12.792Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8624
+
+[debug] [2024-04-30T19:26:13.553Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"signInWithEthereum":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"signInWithEthereum"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, signInWithEthereum. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, signInWithEthereum."}}
+[debug] [2024-04-30T19:26:16.961Z] [worker-pool] Shutting down IDLE worker (us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-signInWithEthereum)"}}
+[debug] [2024-04-30T19:26:16.961Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: FINISHING"}}
+[debug] [2024-04-30T19:26:16.973Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: exited"}}
+[debug] [2024-04-30T19:26:16.973Z] [worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-d1cb9f3b-d82a-476a-ad23-28426c79e662]: FINISHED"}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, signInWithEthereum. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, signInWithEthereum."}}
+[debug] [2024-04-30T19:26:43.123Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:26:43.539Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:26:43.540Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:26:44.543Z] Validating nodejs source
+[debug] [2024-04-30T19:26:45.385Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:26:45.386Z] Building nodejs source
+[debug] [2024-04-30T19:26:45.386Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:26:45.390Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:26:45.391Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8941
+
+[debug] [2024-04-30T19:26:45.816Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"signInWithEthereum":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"signInWithEthereum"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, signInWithEthereum. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, signInWithEthereum."}}
+[debug] [2024-04-30T19:26:55.020Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:26:55.018Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:26:55.024Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:26:55.018Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:26:55.024Z] Accepted request OPTIONS /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:26:55.028Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:26:55.032Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:26:55.035Z] [worker-pool] Cleaned up workers for us-central1-signInWithEthereum: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-signInWithEthereum: 1 --> 0"}}
+[debug] [2024-04-30T19:26:55.103Z] [worker-pool] addWorker(us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-signInWithEthereum)"}}
+[debug] [2024-04-30T19:26:55.183Z] [worker-pool] Adding worker with key us-central1-signInWithEthereum, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-signInWithEthereum, total=1"}}
+[debug] [2024-04-30T19:26:55.936Z] [runtime-status] [88411] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:26:55.937Z] [runtime-status] [88411] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:26:55.937Z] [runtime-status] [88411] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-04-30T19:26:55.937Z] [runtime-status] [88411] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:26:56.072Z] [runtime-status] [88411] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-04-30T19:26:56.072Z] [runtime-status] [88411] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-04-30T19:26:56.073Z] [runtime-status] [88411] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:26:56.073Z] [runtime-status] [88411] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:26:56.074Z] [runtime-status] [88411] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:26:56.074Z] [runtime-status] [88411] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-04-30T19:26:56.148Z] [runtime-status] [88411] Functions runtime initialized. {"cwd":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions","node_version":"20.11.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Functions runtime initialized. {\"cwd\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions\",\"node_version\":\"20.11.0\"}"}}
+[debug] [2024-04-30T19:26:56.148Z] [runtime-status] [88411] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_bcd05577e1d4a9be.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88411] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_bcd05577e1d4a9be.sock"}}
+[debug] [2024-04-30T19:26:56.206Z] [worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: IDLE"}}
+[debug] [2024-04-30T19:26:56.206Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:26:56.207Z] [worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: BUSY"}}
+[debug] [2024-04-30T19:26:56.212Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 4.775458ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 4.775458ms"}}
+[debug] [2024-04-30T19:26:56.212Z] [worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: IDLE"}}
+[debug] [2024-04-30T19:26:56.213Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:26:56.213Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:26:56.213Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:26:56.258Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:26:56.258Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:26:56.258Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:26:56.258Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:26:56.258Z] Accepted request POST /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:26:56.291Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:26:56.292Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:26:56.293Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:26:56.298Z] [worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: BUSY"}}
+[info] >  {"severity":"INFO","message":"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F"} {"user":{"severity":"INFO","message":"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F\"}"}}
+[info] >  {"severity":"INFO","message":"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b"} {"user":{"severity":"INFO","message":"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b\"}"}}
+[info] >  {"severity":"INFO","message":"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89"} {"user":{"severity":"INFO","message":"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89\"}"}}
+[warn] ⚠  functions: Error: The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services.
+    at AppStore.getApp (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/lifecycle.js:65:19)
+    at FirebaseNamespaceInternals.app (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:54:35)
+    at FirebaseNamespace.app (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:256:30)
+    at FirebaseNamespace.ensureApp (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:266:24)
+    at FirebaseNamespace.fn (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:92:25)
+    at /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js:32:35
+    at /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v2/providers/https.js:65:29
+    at cors (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/cors/lib/index.js:188:7)
+    at /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/cors/lib/index.js:224:17
+    at originCallback (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/cors/lib/index.js:214:15) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Error: The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services.\n    at AppStore.getApp (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/lifecycle.js:65:19)\n    at FirebaseNamespaceInternals.app (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:54:35)\n    at FirebaseNamespace.app (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:256:30)\n    at FirebaseNamespace.ensureApp (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:266:24)\n    at FirebaseNamespace.fn (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/app/firebase-namespace.js:92:25)\n    at /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js:32:35\n    at /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v2/providers/https.js:65:29\n    at cors (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/cors/lib/index.js:188:7)\n    at /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/cors/lib/index.js:224:17\n    at originCallback (/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/cors/lib/index.js:214:15)"}}
+[warn] ⚠  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2024-04-30T19:26:56.350Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 52.289083ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 52.289083ms"}}
+[debug] [2024-04-30T19:26:56.351Z] [worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: IDLE"}}
+[debug] [2024-04-30T19:26:56.352Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:26:56.353Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:26:56.354Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:26:56.361Z] [worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: exited"}}
+[debug] [2024-04-30T19:26:56.362Z] [worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-0d4e955c-a1e0-4e0d-89e7-ab4bd296afc6]: FINISHED"}}
+[debug] [2024-04-30T19:27:21.078Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2024-04-30T19:27:21.463Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js.map changed, reloading triggers"}}
+[debug] [2024-04-30T19:27:21.465Z] File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/lib/index.js changed, reloading triggers"}}
+[debug] [2024-04-30T19:27:22.476Z] Validating nodejs source
+[debug] [2024-04-30T19:27:23.501Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ethers": "^6.12.0",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T19:27:23.502Z] Building nodejs source
+[debug] [2024-04-30T19:27:23.502Z] Failed to find version of module node: reached end of search path /Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-04-30T19:27:23.505Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T19:27:23.508Z] Found firebase-functions binary at '/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8611
+
+[debug] [2024-04-30T19:27:23.976Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"signInWithEthereum":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"signInWithEthereum"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, signInWithEthereum. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, signInWithEthereum."}}
+[debug] [2024-04-30T19:27:33.605Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:27:33.604Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:27:33.607Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:27:33.604Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:27:33.607Z] Accepted request OPTIONS /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:27:33.610Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:27:33.611Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:27:33.611Z] [worker-pool] Cleaned up workers for us-central1-signInWithEthereum: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-signInWithEthereum: 1 --> 0"}}
+[debug] [2024-04-30T19:27:33.618Z] [worker-pool] addWorker(us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-signInWithEthereum)"}}
+[debug] [2024-04-30T19:27:33.618Z] [worker-pool] Adding worker with key us-central1-signInWithEthereum, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-signInWithEthereum, total=1"}}
+[debug] [2024-04-30T19:27:34.709Z] [runtime-status] [88867] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:27:34.713Z] [runtime-status] [88867] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:27:34.713Z] [runtime-status] [88867] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-04-30T19:27:34.714Z] [runtime-status] [88867] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:27:34.859Z] [runtime-status] [88867] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-04-30T19:27:34.860Z] [runtime-status] [88867] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-04-30T19:27:34.860Z] [runtime-status] [88867] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:27:34.862Z] [runtime-status] [88867] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-04-30T19:27:34.862Z] [runtime-status] [88867] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-04-30T19:27:34.863Z] [runtime-status] [88867] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-04-30T19:27:34.955Z] [runtime-status] [88867] initializeApp(DEFAULT) {"storageBucket":"colledge-tutorial.appspot.com","projectId":"colledge-tutorial"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] initializeApp(DEFAULT) {\"storageBucket\":\"colledge-tutorial.appspot.com\",\"projectId\":\"colledge-tutorial\"}"}}
+[debug] [2024-04-30T19:27:34.964Z] [runtime-status] [88867] Functions runtime initialized. {"cwd":"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions","node_version":"20.11.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Functions runtime initialized. {\"cwd\":\"/Users/davidcarvajal/Development/Personal/Frontend-Colledge/web3-colledge/functions\",\"node_version\":\"20.11.0\"}"}}
+[debug] [2024-04-30T19:27:34.964Z] [runtime-status] [88867] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_1db7a8bb4d7f3f3d.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[runtime-status] [88867] Listening to port: /var/folders/g4/m3t765s96jz1d6x66th_rz4w0000gn/T/fire_emu_1db7a8bb4d7f3f3d.sock"}}
+[debug] [2024-04-30T19:27:34.992Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE"}}
+[debug] [2024-04-30T19:27:34.993Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:27:34.994Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY"}}
+[debug] [2024-04-30T19:27:35.000Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 8.417792ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 8.417792ms"}}
+[debug] [2024-04-30T19:27:35.003Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE"}}
+[debug] [2024-04-30T19:27:35.003Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:27:35.003Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:27:35.003Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:27:35.005Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:27:35.005Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:27:35.005Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:27:35.005Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:27:35.006Z] Accepted request POST /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:27:35.006Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:27:35.007Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:27:35.007Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:27:35.008Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY"}}
+[info] >  {"severity":"INFO","message":"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F"} {"user":{"severity":"INFO","message":"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F\"}"}}
+[info] >  {"severity":"INFO","message":"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b"} {"user":{"severity":"INFO","message":"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b\"}"}}
+[info] >  {"severity":"INFO","message":"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89"} {"user":{"severity":"INFO","message":"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89\"}"}}
+[debug] [2024-04-30T19:27:35.114Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 106.366ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 106.366ms"}}
+[debug] [2024-04-30T19:27:35.115Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE"}}
+[debug] [2024-04-30T19:27:35.115Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:27:35.115Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:27:35.115Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:29:08.797Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:29:08.761Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:29:08.827Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:29:08.761Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:29:08.829Z] Accepted request OPTIONS /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:29:08.833Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:29:08.835Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:29:08.836Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:29:08.840Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY"}}
+[debug] [2024-04-30T19:29:08.891Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 55.556375ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 55.556375ms"}}
+[debug] [2024-04-30T19:29:08.899Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE"}}
+[debug] [2024-04-30T19:29:08.899Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:29:08.900Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:29:08.900Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:29:08.933Z] [work-queue] {"queuedWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:29:08.933Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-30T19:29:08.934Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/colledge-tutorial/us-central1/signInWithEthereum-2024-04-30T19:29:08.933Z"],"workRunningCount":1}
+[debug] [2024-04-30T19:29:08.934Z] Accepted request POST /colledge-tutorial/us-central1/signInWithEthereum --> us-central1-signInWithEthereum
+[debug] [2024-04-30T19:29:08.934Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-30T19:29:08.934Z] [functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/colledge-tutorial/us-central1/signInWithEthereum, mapping to path=/"}}
+[debug] [2024-04-30T19:29:08.934Z] [worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-signInWithEthereum)"}}
+[info] i  functions: Beginning execution of "us-central1-signInWithEthereum" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Beginning execution of \"us-central1-signInWithEthereum\""}}
+[debug] [2024-04-30T19:29:08.936Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: BUSY"}}
+[info] >  {"severity":"INFO","message":"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F"} {"user":{"severity":"INFO","message":"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"address: 0x53Ec0aF115619c536480C95Dec4a065e27E6419F\"}"}}
+[info] >  {"severity":"INFO","message":"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b"} {"user":{"severity":"INFO","message":"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"Signature: 0xf1207948a9fcef75ad191afca4063f8145eb7be2f6ad2575b9789b9f22a1815b6873b5e32e8e07ad2a33e2ed3b91b584a37902d98df7eaf20d4b63044a0ae99f1b\"}"}}
+[info] >  {"severity":"INFO","message":"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89"} {"user":{"severity":"INFO","message":"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"INFO\",\"message\":\"Recovered address: 0x5aFe7957C5BeC69CdaDB9a3e64a4f44DE326eE89\"}"}}
+[debug] [2024-04-30T19:29:09.002Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-signInWithEthereum" in 65.971041ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finished \"us-central1-signInWithEthereum\" in 65.971041ms"}}
+[debug] [2024-04-30T19:29:09.003Z] [worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"[worker-us-central1-signInWithEthereum-4b820d20-e8f6-4f47-9017-62a9f908f345]: IDLE"}}
+[debug] [2024-04-30T19:29:09.003Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-30T19:29:09.003Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-signInWithEthereum"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-30T19:29:09.003Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
