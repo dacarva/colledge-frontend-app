@@ -2,7 +2,7 @@ This is a [RainbowKit](https://rainbowkit.com) + [wagmi](https://wagmi.sh) + [Ne
 
 ## Getting Started
 
-First, run the development server:
+First, use the .env.example file to get the env variables on the file .env.local
 
 ```bash
 npm run dev
